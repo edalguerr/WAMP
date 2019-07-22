@@ -1,0 +1,54 @@
+<!--
+  Generated template for the PerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>perfil</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div text-center>
+                    <img class="avatar" src="assets/imgs/user.png">
+                    <ion-icon name="camera"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+ 
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <img src="assets/icon/user-log.png" alt="usuario" class="img-icon">
+                <h6>{{user.nombre+" "+user.apellidos}}</h6>
+            </ion-col>
+        </ion-row>
+       
+        <ion-row>
+            <ion-col>
+                <img src="assets/icon/at.png" alt="e-mail" class="img-icon">
+                <h6 class="txt-info">{{user.email}}</h6>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <img src="assets/icon/old-typical-phone.png" alt="nro. celular" class="img-icon">
+                <h6 class="txt-info">{{user.nroCelular}}</h6>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>

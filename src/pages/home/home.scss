@@ -1,0 +1,89 @@
+page-home {
+    .prueba-background-home {
+        //background: url(../../assets/tapiz.png);
+        background: url(../assets/tapiz.png);
+        background-size: contain;
+        // filter: blur(6px);
+    }
+    .info-usuario {
+        text-align: end;
+    }
+    .contenido-card {
+        border-radius: 15px;
+        // box-shadow: #e95a0c 5px 5px;
+        //filter: drop-shadow(8px 8px 10px  gray);
+    } 
+    .contenido-card-alertar{
+        border-radius: 15px;
+        // box-shadow: #e95a0c 5px 5px;
+        filter: drop-shadow(8px 8px 5px  gray);   
+    }
+    .contenido-home {
+        //background-color: #E95A0C;
+        //background-color:#f1f1f1;
+        background-color: #f1f1f1;
+        padding: 2px;
+        border-radius: 15px;
+        .card-contenido {
+            background-color: #f1f1f1;
+            //background-color: #E95A0C;
+            // #f1f1f1
+            //border-radius: 30px;
+            width: 100%;
+            display: inline-block;
+            height: 100px;
+            border-radius: 15px;
+            img {
+                margin: 25px 10px 25px 15px;
+                float: left;
+                width: 64px;
+                height: 64px;
+                max-width: 100%;
+                border-radius: 14px;
+            }
+            p {
+                color: black;
+                margin: 40px 0;
+                text-align: center;
+                font-size: 16px;
+                //font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                //width: 80%;
+            }
+        }
+    }
+
+    .contenido-home-alertar{
+        background-color: #9ACD32;
+        padding: 2px;
+        border-radius: 15px;
+
+        .card-contenido-alertar{
+            background-color: #9ACD32;
+            //background-color: #E95A0C;
+            // #f1f1f1
+            //border-radius: 30px;
+            width: 100%;
+            display: inline-block;
+            height: 100px;
+            border-radius: 15px;
+            img {
+                margin: 25px 10px 25px 15px;
+                float: left;
+                width: 64px;
+                height: 64px;
+                max-width: 100%;
+                border-radius: 14px;
+            }
+            p {
+                color: black;
+                margin: 40px 0;
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                //font-family: Arial, Helvetica, sans-serif;
+                //width: 80%;
+            }
+        }
+    }
+}

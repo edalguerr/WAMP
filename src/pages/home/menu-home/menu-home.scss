@@ -1,0 +1,38 @@
+page-menu-home {
+    .myPerfil {
+        border-radius: 50%;
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        left: 12px;
+        top: 25px;
+        z-index: 100;
+        background-color: rgb(102, 102, 131);
+    }
+    .menu-item-app {
+        font-size: 1.4rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .txt-boton-menu {
+        float: left;
+        margin-top: 5px;
+    }
+}
+
+.ios {
+    .menu-item-app ion-icon {
+        font-size: 2.7rem;
+        color: #3f3f3f;
+        float: left;
+        margin-right: 25px;
+    }
+}
+
+.md {
+    .menu-item-app ion-icon {
+        font-size: 2.7rem;
+        color: #3f3f3f;
+        float: left;
+        margin-right: 25px;
+    }
+}

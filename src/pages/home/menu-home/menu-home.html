@@ -1,0 +1,51 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar color="naranja3">
+            <ion-title>
+                Menú
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list no-lines>
+            <div>
+                <img src="assets/Selección_002.png" class="logotipo-app">
+                <img src="assets/student.png" alt="myPerfil" class="myPerfil" (click)="irPerfil()">
+            </div>
+
+            <button menuClose ion-item (click)="irPerfil()" class="menu-item-app">
+          <ion-icon name="contact" item-start></ion-icon>
+         <span class="txt-boton-menu">Usuario</span>
+      </button>
+            <button menuClose ion-item class="menu-item-app">
+        <ion-icon name="notifications" item-start></ion-icon>
+        <span class="txt-boton-menu">Notificaciones</span>
+    </button>
+            <!-- <button menuClose ion-item >
+        <ion-icon name="share" item-start></ion-icon>
+        Compartir
+    </button>--> 
+            <button menuClose ion-item class="menu-item-app">
+      <ion-icon name="help-circle" item-start></ion-icon> 
+      <span class="txt-boton-menu">Ayuda</span>
+  </button>
+            <button menuClose ion-item class="menu-item-app">
+        <ion-icon name="call" item-start></ion-icon>
+        <span class="txt-boton-menu">Contáctanos</span>
+    </button>
+            <button menuClose ion-item class="menu-item-app">
+          <ion-icon name="information-circle" item-start></ion-icon>
+          <span class="txt-boton-menu">Acerca de...</span>
+      </button>
+            <button menuClose ion-item class="menu-item-app" (click)="cerrarSesion()">
+            <ion-icon name="log-out" item-start></ion-icon>
+            <span class="txt-boton-menu">Cerrar sesión</span>
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus-->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

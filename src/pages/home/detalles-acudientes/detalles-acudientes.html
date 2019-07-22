@@ -1,0 +1,47 @@
+
+<ion-header color="azulSuave">
+
+  <ion-navbar>
+    <ion-title>{{datosAcudiente.alias}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+   <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div text-center>
+                    <img class="avatar" src="assets/{{iconos[datosAcudiente.imagen-1]+'.png'}}">
+                    <ion-icon name="camera"></ion-icon>
+                </div>
+            </ion-col>
+        </ion-row>
+   </ion-grid>
+        
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+            <img src="assets/icon/user-log.png" alt="usuario" class="img-icon">
+            <h6>{{datosAcudiente.nombre+' '+datosAcudiente.apellidos}}</h6>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+            <img src="assets/icon/at.png" alt="e-mail" class="img-icon">
+            <h6 class="txt-info">{{datosAcudiente.email}}</h6>
+        </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+        <ion-col>
+            <img src="assets/icon/old-typical-phone.png" alt="nro. celular" class="img-icon">
+            <h6 class="txt-info">{{datosAcudiente.nroCelular}}</h6>
+        </ion-col>
+    </ion-row>
+
+</ion-grid>
+
+</ion-content>

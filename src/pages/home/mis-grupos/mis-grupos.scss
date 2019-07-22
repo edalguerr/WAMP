@@ -1,0 +1,69 @@
+page-mis-grupos {
+    .button-search{
+        float:right;
+        position: relative;
+        top: 5px;
+        right: 25px;
+        width: 20px;
+    }
+
+    .button-mi-gente{
+        background: #009688;
+        position: absolute;
+        right: 20px;
+        z-index: 100;
+        filter: drop-shadow(1px 1px 1.5px  gray);
+        top: 12px;
+        //float: right;
+        //display: inline;
+    }
+
+    .fab-agregar-mis-grupos{
+        position: fixed;
+        right: 25px;
+        z-index: 100;
+        bottom: 14px;
+        
+    }
+}
+
+.md{
+    .title-mis-grupos{
+       width: 70%;
+       float: left;
+    }
+
+    .img-lista-mis-grupos{
+        width: 56px;
+        height: 56px;
+    } 
+
+    .list-header-md {
+        padding-left: 16px;
+        margin-bottom: 0px;
+        min-height: 4.5rem;
+        border-bottom: 1px solid #dedede;
+        border-top: 0px;
+        font-size: 1.4rem;
+        color: #757575;
+    }
+
+    .fab[mini]{
+        margin: 0px;
+    }
+}
+
+.ios{
+    .button-mi-gente{
+        height: 36px;
+        top: 10px;    
+    }
+
+    .fab-agregar-mis-grupos{
+        bottom: 25px;
+    }
+
+    .fab[mini]{
+        margin: 0px;
+    }
+}

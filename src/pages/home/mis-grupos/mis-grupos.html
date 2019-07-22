@@ -1,0 +1,68 @@
+
+<ion-header>
+
+  <ion-navbar color="azulSuave">
+    <ion-title *ngIf="buscando != true" class="title-mis-grupos">Mis grupos</ion-title>
+    <div class="button-search" *ngIf="buscando != true"  (click)="activarBarra()" ><img src="assets/loupe.png"></div>
+    <ion-searchbar *ngIf="buscando != false" (ionInput)="getItems($event)" (ionCancel)="onCancel($event)" animated="true" showCancelButton="true" placeholder="Busca tu grupo"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+ 
+<ion-content padding> 
+
+  <button ion-button class="button-mi-gente" (click)="irMiGente()">Mi Gente</button>
+  <ion-list>
+    <ion-list-header>
+      Grupos
+    </ion-list-header>
+     
+    <ion-item *ngFor="let room of items" (click)="joinRoom(room.key, room)"><!--item-start-->
+      <ion-thumbnail item-end>
+          <img *ngIf="(room.imagen != indConflict[0] && room.imagen != indConflict[1] && room.imagen != indConflict[2] && room.imagen != indConflict[3])" src="assets/imgs/Groups/{{imagenes[room.imagen-1]+'.png'}}" class="img-lista-mis-grupos">
+          <img *ngIf="(room.imagen == indConflict[0] || room.imagen == indConflict[2])" src="assets/imgs/Groups/{{imagenes[indConflict[2]-1]+'.png'}}" class="img-lista-mis-grupos">
+          <img *ngIf="(room.imagen == indConflict[1] || room.imagen == indConflict[3])" src="assets/imgs/Groups/{{imagenes[indConflict[1]-1]+'.png'}}" class="img-lista-mis-grupos">
+        </ion-thumbnail>
+      <h2>{{room.roomname}}</h2>
+      <p>Integrantes: <span *ngFor="let acudiente of room.acudientes">{{acudiente.nombre}}, </span></p>
+      <button ion-button clear item-end><ion-icon name="chatboxes"></ion-icon></button>
+    </ion-item>
+   <!--
+    <ion-item>
+        <ion-thumbnail item-end>
+            <img src="assets/imgs/Groups/blackboard(1).png" class="img-lista-mis-grupos">
+        </ion-thumbnail>
+        <h2>Estudio</h2>
+        <p>Integrantes: El profe, luisda, arleys, dwith</p>
+        <button ion-button clear item-end><ion-icon name="heart"></ion-icon></button>
+      </ion-item>
+
+      <ion-item>
+          <ion-thumbnail item-end>
+              <img src="assets/imgs/Groups/meeting(1).png" class="img-lista-mis-grupos">
+          </ion-thumbnail>
+          <h2>Amigos</h2>
+          <p>Integrantes: Edwin, luisda, arleys, dwith</p>
+          <button ion-button clear class="icon-favorito" item-end><ion-icon name="heart"></ion-icon></button>
+      </ion-item>
+      -->
+    <!--  <br>
+
+    <ion-list-header>
+      Otros
+    </ion-list-header>
+
+    <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/Groups/business(1).png" class="img-lista-mis-grupos">
+        </ion-thumbnail>
+        <h2>Trabajo</h2>
+        <p>Integrantes: El Admi, andrea(la secre), arleys(sistemas)</p>
+        <button ion-button clear item-end><ion-icon name="ios-heart-outline"></ion-icon></button>
+    </ion-item>-->
+    
+  </ion-list>
+
+  <button ion-fab mini class="fab-agregar-mis-grupos" (click)="addRoom()"><ion-icon name="add"></ion-icon></button>
+</ion-content>

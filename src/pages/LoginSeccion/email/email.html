@@ -1,0 +1,38 @@
+
+<ion-header>
+
+    <ion-navbar >
+        <ion-title>Email</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <h6 id="titulo" text-center> Cual es tu Email ? </h6>
+
+    <ion-row>
+        <ion-col>
+            <ion-list>
+                <ion-item class="formulario">
+                    <ion-input type="email" placeholder="Correo Electronico" [(ngModel)]="user.email"  required></ion-input>
+                </ion-item>
+
+                <ion-item class="formulario">
+                    <ion-input type="tel" placeholder="Telefono" [(ngModel)]="user.nroCelular" required></ion-input>
+                </ion-item>
+
+
+            </ion-list>
+        </ion-col>
+    </ion-row>
+
+
+    <ion-row class="boton-log">
+        <ion-col>
+            <button color="primaryLogin" ion-button full (click)="pagePassword()" color="primaryLogin">Siguiente</button>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

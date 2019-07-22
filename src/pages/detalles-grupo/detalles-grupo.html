@@ -1,0 +1,56 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalles • {{nombreGrupo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="contenido-fondo">
+  <ion-card>
+    <ion-card-header>
+      Integrantes
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item *ngFor="let acudiente of acudientes">
+        <ion-avatar item-start>
+          <img src="assets/student.png">
+        </ion-avatar>
+        <h2>{{acudiente.nombre}}</h2>        
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Administrador
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/student.png">
+        </ion-avatar>
+        <h2>{{nombreAdmi}}</h2>        
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <button ion-button icon-start block (click)="vaciarChat()">
+      <ion-icon name="trash"></ion-icon>
+      Vaciar chat
+  </button>
+
+  <button ion-button color="danger"  icon-start block *ngIf="user.nroCelular != administrador" (click)="salirGrupo()">
+    <ion-icon name="exit"></ion-icon>
+    Dejar grupo
+  </button>
+  <!--en caso de ser administrador se mostrara el siguiente boton-->
+  <button  ion-button color="danger" icon-start block *ngIf="user.nroCelular == administrador" (click)="eliminarGrupo()">
+    <ion-icon name="exit"></ion-icon>
+    Eliminar grupo
+  </button>
+</ion-content>

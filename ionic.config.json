@@ -1,0 +1,7 @@
+{
+  "name": "transcAppOff",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

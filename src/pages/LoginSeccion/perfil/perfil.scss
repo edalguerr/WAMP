@@ -1,0 +1,23 @@
+page-perfil {
+    color: rgba(88, 88, 88, 0.8);
+    .avatar {
+        height: 100px;
+        width: 100px;
+        /* los siguientes valores son independientes del tamaño del círculo */
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+    .img-icon {
+        width: 32px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+        margin-top: 12px;
+    }
+    .txt-info {
+        line-height: 34px;
+    }
+
+}

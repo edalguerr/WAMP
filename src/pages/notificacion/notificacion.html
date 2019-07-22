@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+      <ion-buttons start>
+          <button ion-button (click)="regresar()" item-end icon-left>
+            <ion-icon name="home"></ion-icon>
+            Regresar
+          </button>
+      </ion-buttons>
+    <ion-title>Alerta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <!--
+    <ion-card>           
+       <ion-card-content>
+             {{alias}} ha emitido una alerta, al parecer está en problemas, puede necesitar tu ayuda
+        </ion-card-content> 
+    </ion-card>
+    -->
+    <ion-card>
+      <div id="map"></div>
+    </ion-card>
+
+    <div padding-horizontal id="panel">
+    </div>
+
+  <button ion-button  full  color="secondary" icon-left (click)="llamar()">
+    <ion-icon name="call"></ion-icon>
+    Contáctar a {{alias}}
+  </button>
+
+</ion-content>

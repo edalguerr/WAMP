@@ -1,0 +1,46 @@
+
+<ion-header>
+
+  <ion-navbar color="azulSuave">
+    <ion-title *ngIf="buscando != true" class="title-mis-grupos">Mi Gente</ion-title>
+    <div class="button-search" *ngIf="buscando != true"  (click)="activarBarra()" ><img src="assets/loupe.png"></div>
+    <ion-searchbar *ngIf="buscando != false" (ionInput)="getItems($event)" (ionCancel)="onCancel($event)" animated="true" showCancelButton="true" placeholder="Busca tu grupo"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list> 
+    <ion-list-header>
+      Acudientes
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let acudiente of items">
+      <ion-item (click)="irDetallesAcudiente(acudiente)">
+        <ion-avatar item-start>
+          <img src="assets/{{iconos[acudiente.imagen-1]+'.png'}}">
+        </ion-avatar>
+        <h2>{{acudiente.alias}}</h2>
+        <p>{{acudiente.email}}</p>
+      </ion-item>  
+      <ion-item-options side="right">
+        <button ion-button color="primary" (click)="editarAlias(acudiente)">
+          <ion-icon name="create"></ion-icon>
+          Editar alias
+        </button>
+        <button ion-button color="secondary" (click)="llamar(acudiente)">
+          <ion-icon name="call"></ion-icon>
+          LLamar
+        </button>
+      </ion-item-options>
+      <ion-item-options side="left">
+        <button ion-button color="danger" (click)="eliminar(acudiente)">
+          <ion-icon name="trash"></ion-icon>
+          Eliminar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <button ion-fab mini class="fab-agregar-mis-grupos" (click)="irFormularioAcudiente()"><ion-icon name="add"></ion-icon></button>
+</ion-content>

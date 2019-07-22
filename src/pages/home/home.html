@@ -1,0 +1,52 @@
+<ion-header>
+
+    <ion-navbar color="naranja">
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <div class="info-usuario" (click)="irPerfil()">
+            <ion-title>{{user.nombre}}<!--Onion-->
+                <ion-icon name="contact" class="icon-user-miniatura"></ion-icon>
+            </ion-title>
+        </div> 
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="prueba-background-home">
+
+    <!--style="background-color:#f1f1f1; "-->
+    <ion-list>
+        <ion-card class="contenido-card">
+            <ion-card-content class="contenido-home">
+                <div class="card-contenido" (click)="irMiGente()">
+                    <img src="assets/imgs/collaboration.png">
+                    <p>Mi gente</p>
+                </div>
+            </ion-card-content>
+        </ion-card>
+
+        <br>
+
+        <ion-card class="contenido-card">
+            <ion-card-content class="contenido-home">
+                <div class="card-contenido" (click)="irMisGrupos()">
+                    <img src="assets/imgs/smartphone.png">
+                    <p>Notificar accidente</p>
+                </div>
+            </ion-card-content>
+        </ion-card>
+
+        <br>
+
+        <ion-card class="contenido-card-alertar">
+            <ion-card-content class="contenido-home-alertar">
+                <div class="card-contenido-alertar" (click)="alertar()">
+                    <img src="assets/imgs/warning.png">
+                    <p>Alertar</p>
+                </div>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+</ion-content>

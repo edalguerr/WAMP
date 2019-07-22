@@ -1,0 +1,23 @@
+page-mi-gente {
+    .fab-agregar-mis-grupos{
+        position: fixed;
+        right: 25px;
+        z-index: 100;
+        bottom: 14px; 
+    }
+
+    .button-search{
+        float:right;
+        position: relative;
+        top: 5px;
+        right: 25px;
+        width: 20px;
+    }
+}
+
+.md{
+    .title-mis-grupos{
+       width: 70%;
+       float: left;
+    }
+}

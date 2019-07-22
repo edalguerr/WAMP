@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar color="azulSuave">
+    <ion-title>Nuevo acudiente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset-list>
+      
+    <ion-item>
+        <ion-label>Alias:</ion-label>
+        <ion-input type="text" [(ngModel)]="alias"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Celular:</ion-label>
+        <ion-input type="tel" [(ngModel)]="celular"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list no-lines radio-group [(ngModel)]="iconContacto" inset-list class="lista-iconos">
+    <ion-list-header>
+      icono
+    </ion-list-header>
+    
+    <ion-item class="inicial-i" id="primero">
+      <ion-radio value="1" (ionSelect)="seleccionado()" class="img-radio" ></ion-radio>
+
+    </ion-item>
+    <ion-item class="primero-i" id="segundo">
+      <ion-radio (ionSelect)="seleccionado1()"  value="2" class="img-radio"></ion-radio>
+    </ion-item>
+    <ion-item class="segundo-i" id="tercero">
+        <ion-radio (ionSelect)="seleccionado2()"  value="3" class="img-radio" checked="true"></ion-radio>
+      </ion-item>
+</ion-list>  
+  
+  <button ion-button block class="agregar-button" (click)="agregarAcudiente()">Agregar</button>
+</ion-content>

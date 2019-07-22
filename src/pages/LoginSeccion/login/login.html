@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-navbar color="primaryLogin">
+        <ion-title> login</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<br>
+    <div id="cloud-layer">
+
+        <ion-row>
+            <ion-col>
+                <ion-list>
+                    <ion-item class="formulario">
+                        <ion-input type="email" placeholder="Email" [(ngModel)]="user.email" required></ion-input>
+                    </ion-item>
+
+                    <ion-item class="formulario">
+                        <ion-input type="password"  required placeholder=" Contraseña" [(ngModel)]="user.password"></ion-input>
+                    </ion-item>
+
+                </ion-list>
+            </ion-col>
+        </ion-row>
+
+        <ion-grid class="social">
+            <ion-row>
+                <ion-col>
+                    <button ion-button full color="botonesRed"> <ion-icon name="logo-googleplus"></ion-icon></button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button full color="botones"> <ion-icon name="logo-twitter"></ion-icon></button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button full color="botones"> <ion-icon name="logo-facebook"></ion-icon></button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+       <!-- <ion-row class="check">
+            <ion-col>
+                <ion-item>
+                    <ion-label>Recordar tu cuenta </ion-label>
+                    <ion-checkbox color="primaryLogin" checked="true"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+        </ion-row>-->
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6 text-center col-12 col-sm>
+                    <label>Aun no tienes cuenta?</label> <a class="link-login" (click)="register()">Registrate</a>
+                    <br>
+                </ion-col>
+                <ion-col col-6 text-center col-12 col-sm>
+
+                    <label>haz olvidado contraseña ?</label> <a class="link-login" (click)="pageReset()">Clic aqui</a>
+                    <br>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-row class="boton-log">
+            <ion-col>
+                <button ion-button full (click)="login(user)" color="primaryLogin">Login</button>
+            </ion-col>
+        </ion-row>
+
+    </div>
+
+</ion-content>

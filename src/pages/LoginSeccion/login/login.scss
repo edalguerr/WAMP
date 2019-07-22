@@ -1,0 +1,42 @@
+.ios,
+.md {
+    page-login {
+        .scroll-content {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .formulario {
+            border-radius: 4px !important;
+            padding-left: 10px !important;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            box-sizing: border-box;
+            //opacity: 0.7;
+            font-size: 1.0em;
+        } 
+        ion-checkbox {
+            font-size: 1.0em;
+            border: 1px solid #ccc;
+        }
+        .social,
+        .check {
+            margin-bottom: 8px;
+        }
+        .boton-log {
+            margin-top: 10px;
+            margin-bottom: 8px;
+            button{
+                border-radius: 4px;
+            }
+        }
+        .bar-button-default-ios {
+            color: #e95a0c;
+            background-color: transparent;
+        }
+        .link-login {
+            color: #008a96;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Agregar grupo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="addRoom()">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>nombre del grupo</ion-label>
+        <ion-input type="text" [(ngModel)]="data.roomname" name="roomname" required=""></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Integrantes</ion-label>
+          <ion-select [(ngModel)]="integrantes" multiple="true" cancelText="cancelar" okText="aceptar"  name="integrantes">
+            <ion-option *ngFor="let acudiente of acudientes" value="{{acudiente.nroCelular}}">{{acudiente.alias}}</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+         <ion-card>
+            <ion-card-header>
+              Perfil del grupo
+            </ion-card-header>
+           <ion-card-content>
+              <ion-slides loop="true">
+                  <ion-slide *ngFor="let imagen of imagenes">
+                      <img src="{{'assets/imgs/Groups/'+imagen+'.png'}}" class="imagen-grupo">
+                  </ion-slide>
+                </ion-slides>
+           </ion-card-content>
+         </ion-card>
+      </ion-item>
+      <ion-item>
+        <button ion-button full round color="secondary" type="submit">Agregar</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
