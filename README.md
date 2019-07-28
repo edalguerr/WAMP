@@ -20,8 +20,16 @@ Carácteristicas:
 
 
 #########################################################################
-Encontraa imagenes del diseño de la aplicacion en los siguientes enlaces (Google Drive):
+Diseño de WAMP
 
-
-<a href="https://drive.google.com/open?id=14OfN4P6EHDr2RiplkpCFTUecxnT7pdcn"></a>
-<a href="https://drive.google.com/open?id=176N6pXAbOrtnvacYxRUJwDs2a1_r-sT9"><img src="https://drive.google.com/open?id=176N6pXAbOrtnvacYxRUJwDs2a1_r-sT9" /></a>
+ <p align="center"> 
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/menu.png" width="350" alt="menu"/>
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/home.jpeg" width="350" alt="wamp home"/>
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/login.png" width="350" alt="login"/>
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/registro.png" width="350" alt="registro"/>
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/agregarAcudiente.jpeg" width="350" alt="agregar acudiente"/>
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/miGente.jpeg" width="350" alt="mi gente"/>  
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/agregarGrupo.jpeg" width="350" alt="agregar grupo"/> 
+  <img src="https://raw.githubusercontent.com/edalguerr/WAMP/master/diseño/misgrupos.jpeg" width="350" alt="mis grupos"/>
+  
+ </p>
