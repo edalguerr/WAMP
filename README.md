@@ -17,3 +17,11 @@ Carácteristicas:
 -Contáctarlo mediante chat para conocer como se encuentra
 
 -Informar a familiares y amigos mediante grupos
+
+
+#########################################################################
+Encontraa imagenes del diseño de la aplicacion en los siguientes enlaces (Google Drive):
+
+
+<a href="https://drive.google.com/open?id=14OfN4P6EHDr2RiplkpCFTUecxnT7pdcn"></a>
+<a href="https://drive.google.com/open?id=176N6pXAbOrtnvacYxRUJwDs2a1_r-sT9"><img src="https://drive.google.com/open?id=176N6pXAbOrtnvacYxRUJwDs2a1_r-sT9" /></a>
