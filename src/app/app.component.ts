@@ -15,12 +15,12 @@ import { NotificacionPage } from '../pages/notificacion/notificacion';
 
 //, platformCore, platformCore, platformCore, platformCore 
 var config = {
-  apiKey: "AIzaSyAlAXw5INJsDx9xeggpm9HLsrUd4ZBGFJc",
-  authDomain: "wamp-3a76a.firebaseapp.com",
-  databaseURL: "https://wamp-3a76a.firebaseio.com",
-  projectId: "wamp-3a76a",
+  apiKey: "tu apikey",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
   storageBucket: "",
-  messagingSenderId: "508010567173"
+  messagingSenderId: ""
 };
  
 //<preference name="SplashScreenDelay" value="3000" />
@@ -43,7 +43,7 @@ export class MyApp {
       //this.hideSplashScreen();
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.oneSignal.startInit('d499ef57-61aa-4366-ac8d-689c436ea7f8','508010567173');
+      this.oneSignal.startInit('','');
       this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
       this.oneSignal.setSubscription(true);
             
