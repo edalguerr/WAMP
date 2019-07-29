@@ -34,7 +34,7 @@ export class MyApp {
   token;
   sesionActiva;
 
-  //d499ef57-61aa-4366-ac8d-689c436ea7f8
+  
   constructor( public backGroundMode:BackgroundMode, public vibration: Vibration, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private oneSignal: OneSignal, public toastCtrl: ToastController) {
     
    //LoginPage.prototype.myNav = this.nav;
