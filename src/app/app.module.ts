@@ -44,12 +44,12 @@ import { DetallesGrupoPage } from '../pages/detalles-grupo/detalles-grupo';
 
 
 var config = {
-  apiKey: "AIzaSyAlAXw5INJsDx9xeggpm9HLsrUd4ZBGFJc",
-  authDomain: "wamp-3a76a.firebaseapp.com",
-  databaseURL: "https://wamp-3a76a.firebaseio.com",
-  projectId: "wamp-3a76a",
+  apiKey: "tu apikey",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
   storageBucket: "",
-  messagingSenderId: "508010567173"
+  messagingSenderId: ""
 };
 
 
